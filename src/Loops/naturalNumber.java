@@ -7,7 +7,7 @@ public class naturalNumber {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the natural number");
         int n = sc.nextInt();
-        for(int i=0;i <n;i++){
+        for(int i = 0;i<n;i++){
             System.out.print(i+1 + " ");
         }
     }
