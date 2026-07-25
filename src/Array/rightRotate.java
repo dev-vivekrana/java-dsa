@@ -1,8 +1,6 @@
 package Array;
-
 import java.util.Arrays;
 import java.util.Scanner;
-
 public class rightRotate {
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -13,7 +11,6 @@ public class rightRotate {
             arr[k+1]= arr[k];
         }
         arr[0]=temp;
-
         System.out.println(Arrays.toString(arr));
     }
 }
