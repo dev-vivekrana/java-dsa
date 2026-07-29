@@ -3,20 +3,25 @@ package Sorting;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class bubbleSort {
-
-    static void bubbleSorting(int[] arr, int n){
+public class selectionSort {
+    static void selectionSorting(int[] arr,int n){
         for(int i=0;i<n-1;i++){
-            for(int j=0;j<n-i-1;j++){
-                if(arr[j]>arr[j+1]){
-                    int temp = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = temp;
+            int min = i;
+            for(int j=i+1;j<n;j++){
+                if(arr[j]<arr[min ]){
+                    min = j;
                 }
+                }
+            if(i != min){
+                int temp = arr[i];
+                arr[i] = arr[min];
+                arr[min] = temp;
             }
+
         }
-        System.out.println(Arrays.toString(arr));
-    };
+        System.out.println(Arrays.toString(arr ));
+    }
+
     static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter the size of array : ");
@@ -26,9 +31,7 @@ public class bubbleSort {
         for(int i=0;i<arr.length;i++){
             arr[i]=sc.nextInt();
         }
-        bubbleSorting(arr,n);
+        selectionSorting(arr,n);
 
     }
-
-
 }
