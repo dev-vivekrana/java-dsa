@@ -15,20 +15,36 @@ public class Students {
     }
 
     // method to assign values in the object and dont forgot to pass the address at the end
-    void assignValues(String n , int a, long p, Students obj){
-        obj.name = n;
-        obj.age = a;
-        obj.phone = p;
+//    void assignValues(String n , int a, long p, Students obj){
+//        obj.name = n;
+//        obj.age = a;
+//        obj.phone = p;
+//    }
+    Students(String name , int age, long phone){
+        this.name =name;
+        this.age =age;
+        this.phone =phone;
     }
+
+
     static void main(String[] args) {
         //to make objects from the class
-        Students vivek = new Students();
+//        Students vivek = new Students();
         //to assign values use the method
-        vivek.assignValues("Vivek",20,123456,vivek);
+//        vivek.assignValues("Vivek",20,123456,vivek);
         // this will give the address of the object not the whole object
-        System.out.println(vivek);
+//        System.out.println(vivek);
 
         // first generate toString method
+//        System.out.println(vivek);
+
+
+        // Constructor
+
+        Students jatin = new Students("jatin",18,123123);
+        System.out.println(jatin);
+
+        Students vivek = new Students("vivek",20,1000001);
         System.out.println(vivek);
     }
 }
