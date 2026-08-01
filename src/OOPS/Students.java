@@ -1,5 +1,19 @@
 package OOPS;
+class Employee{
+    private int id;
 
+    // setter to set the values of private field
+    void setId(int id){
+        if(id>0) this.id = id;
+        else System.out.println("Not possible");
+    }
+
+    // getter to return the value of private field
+    int getId(){
+        return this.id;
+    }
+
+}
 public class Students {
     String name;
     int age;
@@ -46,5 +60,12 @@ public class Students {
 
         Students vivek = new Students("vivek",20,1000001);
         System.out.println(vivek);
+
+        // Encapsulation
+        // accessing the values of Employee class
+
+        Employee obj = new Employee();
+        obj.setId(10);
+        System.out.println(obj.getId());
     }
 }
