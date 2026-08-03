@@ -1,4 +1,5 @@
-import java.util.Arrays;
+package String;
+
 import java.util.Scanner;
 
 public class capitalizeFirstandLastChar {
